@@ -4,19 +4,24 @@ Create:
 * a database called ```taxi_trip```
 * a user called ```taxi_dude``` who can access this database using the password ```taxi```
 
-Here is an example script you can customize to create the database and the user
+Here is a script you can customize to create the database and the user:
 
 ```
 CREATE DATABASE database_name;
 CREATE USER username@localhost IDENTIFIED BY 'a password to use...';
 GRANT ALL PRIVILEGES ON database_name.* TO username@localhost;
-FLUSH PRIVILEGES;```
+FLUSH PRIVILEGES;
+```
 
-
-## Create the tables
+##Create the tables
 
 Create these tables in the database taxi_trip database, the columns are described below.
 
+To create tables you will need a script like this:
+
+```
+
+```
 
 Add the data below to the database
 
