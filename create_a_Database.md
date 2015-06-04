@@ -1,8 +1,8 @@
 ## Setup the database
 
 Create:
-	* a database called ```taxi_trip```
-	* a user called ```taxi_dude``` who can access this database
+* a database called ```taxi_trip```
+* a user called ```taxi_dude``` who can access this database using the password ```taxi```
 
 ## Create the tables
 
