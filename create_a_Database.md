@@ -9,6 +9,65 @@ Create:
 Create these tables in the database taxi_trip database, the columns are described below.
 
 ###Locations
+	* Bellville
+	* Parow
+	* Goodwood
+	* Woodstock
+	* Cape Town
+	* Langa
+	* Khayelitsha
+	* Delft
+
+###Routes
+	* Bellville -> Parow - R5
+	* Bellville -> Goodwood - R8
+	* Bellville -> Cape Town - R15
+
+	* Parow -> Woodstock - R7.50
+	* Parow -> Cape Town - R12
+	* Parow -> Langa - R7
+	
+	* Goodwood -> Langa - R9
+	* Goodwood -> Delft - R9
+	* Goodwood -> Cape Town - R12
+	
+	* Woodstock -> Cape Town - R5
+	* Woodstock -> Parow - R12
+	* Woodstock -> Langa - R8
+	
+###Trips
+	* id - int - primary key - auto_increment
+	* started_at - datetime
+	* ended_at - datetime
+	* route_id - int - foreign key to Routes
+	* driver_id - int - foreign key to Drivers
+	* load int
+	* fare_price - decimal(10,2)
+
+###Taxi
+	* id - int - primary key - auto_increment
+	* registration_number char(15)
+	* model - char(30)
+
+###Drivers
+	* id - int - primary key - auto_increment
+	* firstname char(40)
+	* surname char(40)
+	* cellphone_number char(20)
+	* rating int
+
+###Refuels 
+	* id - int - primary key - auto_increment
+	* done_at - datetime
+	* liters decimal(6,2)
+	* cost decimal(10,2)
+	* speedometer_reading int
+
+## Add data
+
+Add the data below to the database
+
+###Locations
 	* id - int - primary key - autoincrement
 	* name - char(60)
 
@@ -44,4 +103,6 @@ Create these tables in the database taxi_trip database, the columns are describe
 	* liters decimal(6,2)
 	* cost decimal(10,2)
 	* speedometer_reading int
+
+
 
