@@ -23,8 +23,6 @@ To create tables you will need a script like this:
 
 ```
 
-Add the data below to the database
-
 ###Locations
 	* id - int - primary key - autoincrement
 	* name - char(60)
@@ -63,6 +61,8 @@ Add the data below to the database
 	* speedometer_reading int
 
 ## Add data
+
+Add the data below to the database
 
 ###Locations
 	* Bellville
